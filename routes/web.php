@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,6 @@ Route::middleware([ 'auth:sanctum', 'verified'])->name('dashboard.')->prefix('da
     Route::get('/', [DashboardController::class, 'index'])->name('index');
 
     Route::middleware(['admin'])->group(function(){
-        
+        Route::resource('product', ProductController::class);
     });
 });
