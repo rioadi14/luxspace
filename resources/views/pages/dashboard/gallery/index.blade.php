@@ -43,7 +43,7 @@
                                 <th>Photo</th>
                                 <th>Featured</th>
                                 <th>Aksi</th>    
-                            </tr>    
+                            </tr>
                         </thead>
                         <tbody></tbody>    
                     </table>   

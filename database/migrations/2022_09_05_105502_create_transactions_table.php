@@ -19,7 +19,7 @@ class CreateTransactionsTable extends Migration
             $table->bigInteger('users_id');
             $table->string('name')->nullable();
             $table->string('email')->nullable();
-            $table->text('addrerss')->nullable();
+            $table->text('address')->nullable();
             $table->string('phone')->nullable();
             $table->string('courier')->nullable();
             $table->string('payment')->default('MIDTRANS');
